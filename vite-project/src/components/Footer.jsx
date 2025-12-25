@@ -11,7 +11,7 @@ const Footer = () => {
   return (
     <footer className="bg-[#0b132b] text-gray-300 pt-12">
       
-      {/* Top bar */}
+      
       <div className="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4 pb-8 border-b border-gray-700">
         <div className="text-sm">
           📞 +237 6 40 80 79 72 /+237 670 63 48 39
@@ -26,10 +26,10 @@ const Footer = () => {
         </a>
       </div>
 
-      {/* Main footer */}
+      
       <div className="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-4 gap-10">
         
-        {/* Social */}
+        
         <div>
           <h3 className="text-white font-semibold mb-4">
             Suivez-nous sur nos réseaux

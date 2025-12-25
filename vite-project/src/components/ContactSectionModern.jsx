@@ -4,14 +4,14 @@ const ContactSectionModern = () => {
   const formRef = useRef(null);
   const [focused, setFocused] = useState({});
 
-  // 🔹 Données du formulaire
+ 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
     message: "",
   });
 
-  // 🔹 Animation au scroll
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -27,18 +27,18 @@ const ContactSectionModern = () => {
     if (formRef.current) observer.observe(formRef.current);
   }, []);
 
-  // 🔹 Gestion des labels flottants
+  
   const handleFocus = (field) => setFocused({ ...focused, [field]: true });
   const handleBlur = (field, value) => {
     if (!value) setFocused({ ...focused, [field]: false });
   };
 
-  // 🔹 Mise à jour des champs
+  
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  // 🔹 Envoi vers le backend Flask
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
 
@@ -69,7 +69,7 @@ const ContactSectionModern = () => {
     <section id="contact" className="bg-white py-24">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
 
-        {/* Informations de contact */}
+       
         <div className="text-gray-900 flex flex-col justify-center space-y-6">
           <h2 className="text-4xl font-bold mb-4 text-purple-600">
             Contactez-nous
@@ -110,7 +110,7 @@ const ContactSectionModern = () => {
           </div>
         </div>
 
-        {/* Formulaire */}
+        
         <form
           ref={formRef}
           onSubmit={handleSubmit}

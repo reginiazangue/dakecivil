@@ -14,7 +14,7 @@ const projects = [
 const Projects = () => {
   return (
     <section id="projects" className="bg-[#0B1C2D] text-white py-16">
-      {/* Titre */}
+      
       <div className="text-center mb-12">
         <h2 className="text-4xl font-bold text-violet-600 mb-4">Nos Projets</h2>
         <p className="text-gray-300 max-w-3xl mx-auto">
@@ -22,7 +22,7 @@ const Projects = () => {
         </p>
       </div>
 
-      {/* Grille des projets */}
+    
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {projects.map((project) => (
           <div

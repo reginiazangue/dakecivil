@@ -62,15 +62,14 @@ const AboutPage = () => {
     <div id="about" className="bg-gray-100 min-h-screen flex flex-col items-center py-12">
       <div className="container mx-auto px-4">
         
-        {/* Header */}
+        
         <header className="text-center mb-12">
           <h1 className="text-4xl font-bold text-blue-700">À propos de DAKE_CIVIL</h1>
           <p className="text-lg text-gray-600 mt-4">
             Votre partenaire de confiance pour vos projets de génie civil et de construction
           </p>
         </header>
-
-        {/* Sections accordéon avec icône */}
+        
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {sections.map((section, index) => (
             <div
@@ -81,7 +80,7 @@ const AboutPage = () => {
                 className="flex items-center cursor-pointer"
                 onClick={() => toggleSection(index)}
               >
-                {/* Icône circulaire */}
+                
                 <img
                   src={section.icon}
                   alt={section.title}
@@ -97,7 +96,7 @@ const AboutPage = () => {
                 </div>
               </div>
 
-              {/* Contenu animé */}
+              
               <div
                 ref={(el) => (contentRefs.current[index] = el)}
                 className="overflow-hidden transition-all duration-500 mt-4 text-gray-700 whitespace-pre-line"
