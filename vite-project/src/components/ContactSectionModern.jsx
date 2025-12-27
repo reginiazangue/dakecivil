@@ -43,7 +43,7 @@ const ContactSectionModern = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch("https://dakecivil.onrender.com/contact", {
+      const response = await fetch("https://dakecivil-1.onrender.com/contact", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

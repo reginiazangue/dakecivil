@@ -6,7 +6,7 @@ import os
 
 
 app = Flask(__name__)
-CORS(app)
+CORS(app, origins="https://dancing-faun-b1e945.netlify.app")
 
 EMAIL_SENDER = os.environ.get("EMAIL_SENDER")
 EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
