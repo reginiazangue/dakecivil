@@ -12,6 +12,10 @@ EMAIL_SENDER = os.environ.get("EMAIL_SENDER")
 EMAIL_PASSWORD = os.environ.get("EMAIL_PASSWORD")
 EMAIL_RECEIVER = os.environ.get("EMAIL_RECEIVER")
 
+@app.route("/", methods=["GET"])
+def home():
+    return {"status": "Backend Dake Civil OK"}
+
 @app.route("/contact", methods=["POST"])
 def contact():
     data = request.json
@@ -43,7 +47,6 @@ def contact():
     except Exception as e:
         return jsonify({"error": str(e)}), 500
 
-
-if __name__ == "__main__":
-    app.run(debug=True)
-   
+if __name__ == "_main_":
+    port = int(os.environ.get("PORT", 10000))
+    app.run(host="0.0.0.0", port=port)   
